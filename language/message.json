@@ -1,0 +1,50 @@
+{
+  "1000": {
+    "msg": {
+      "en": "Successful",
+      "ar": ""
+    }
+  },
+  "1001": {
+    "msg": {
+      "en": "Unsuccessful",
+      "ar": ""
+    }
+  },
+  "1002": {
+    "msg": {
+      "en": "Something went wrong",
+      "ar": ""
+    }
+  },
+  "1003": {
+    "msg": {
+      "en": "Email already exists",
+      "ar": ""
+    }
+  },
+  "1004": {
+    "msg": {
+      "en": "Invalid email/password",
+      "ar": ""
+    }
+  },
+  "1005": {
+    "msg": {
+      "en": "Password updated",
+      "ar": ""
+    }
+  },
+  "1006": {
+    "msg": {
+      "en": "Invalid email/current password",
+      "ar": ""
+    }
+  },
+  "1007": {
+    "msg": {
+      "en": "Invalid record id",
+      "ar": ""
+    }
+  }
+}
