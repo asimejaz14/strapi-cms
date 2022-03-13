@@ -1,0 +1,31 @@
+version: "3.8"
+services:
+
+  app:
+    build:
+      context: .
+    image: strapi:v4
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/STRAPI_CMS
+    command: >
+      sh -c "python manage.py migrate && python manage.py migrate_data && python manage.py runserver 0.0.0.0:8000"
+    container_name: strapi_container
+
+    environment:
+      - DB_HOST=postgres
+      - DB_NAME=strapi
+      - DB_USER=admin
+      - DB_PASS=admin
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_DB=strapi
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+    ports:
+      - "5432:5432"
