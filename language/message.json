@@ -46,5 +46,41 @@
       "en": "Invalid record id",
       "ar": ""
     }
+  },
+  "1008": {
+    "msg": {
+      "en": "Provide a valid app id",
+      "ar": ""
+    }
+  },
+  "1009": {
+    "msg": {
+      "en": "Access Unauthorized",
+      "ar": ""
+    }
+  },
+  "1010": {
+    "msg": {
+      "en": "Provide a valid plan id",
+      "ar": ""
+    }
+  },
+  "1011": {
+    "msg": {
+      "en": "Subscription updated",
+      "ar": ""
+    }
+  },
+  "1012": {
+    "msg": {
+      "en": "Subscription canceled",
+      "ar": ""
+    }
+  },
+  "1013": {
+    "msg": {
+      "en": "App updated",
+      "ar": ""
+    }
   }
 }

@@ -29,3 +29,31 @@ class UserAppSerializer(serializers.ModelSerializer):
         model = UserApp
         fields = "__all__"
 
+
+class SubscriptionSerializer(serializers.ModelSerializer):
+
+    plan = serializers.SerializerMethodField()
+    app = serializers.SerializerMethodField()
+    status = serializers.SerializerMethodField()
+
+    def get_plan(self, obj):
+        try:
+            return obj.plan.plan_name
+        except:
+            return None
+
+    def get_app(self, obj):
+        try:
+            return obj.app.app_name
+        except:
+            return None
+
+    def get_status(self, obj):
+        try:
+            return "Active" if obj.status is True else "Canceled"
+        except:
+            return None
+
+    class Meta:
+        model = Subscription
+        fields = "__all__"

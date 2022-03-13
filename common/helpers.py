@@ -16,3 +16,8 @@ def get_default_query_param(request, key, default):
             return key
     return default
 
+
+def verify_user_in_request(request, obj):
+    if not obj or (request.user.id == obj.app.user.id):
+        return True
+    return False
