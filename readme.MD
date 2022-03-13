@@ -1,16 +1,9 @@
 # Steps to run the project
 
- - Create database in postgres named "strapi"
- - Install requirements
+You need to run these commands to start strapi project
 
-    `pip install -r requirements.txt`
+   - `docker-compose build`
+   
 
- - Run these commands
- 
- 
-
-    `python manage.py migrate`
-
-This is to populate static table of plans
-    `python manage.py migrate_data`
+   - `docker-compose up -d`
 
